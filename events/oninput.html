@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Key Event</title>
+</head>
+<body>
+
+<p>A function is triggered whenever the input field changes.</p>
+
+<input type="text" oninput="myFunction()" placeholder="Type something...">
+
+<script>
+function myFunction() {
+    console.log("Input changed: ", this.value); // Log the current input value
+    // Optional: Alert can be commented out or used conditionally
+    // alert("You changed the input field");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+
+<body>
+	<script type='text/javascript'>
+		function Empty() {
+			var nm = document.f1.txt1.value;
+			var con = document.f1.txt2.value;
+			if (nm == "" || con == "" || nm == null || con == null) {
+				alert("can't put field empty");
+			}
+			else {
+				if (isNaN(con) || con.length < 10) {
+					alert("not valid data");
+				}
+				else {
+					alert("valid contact number and name");
+				}
+			}
+		}
+
+	</script>
+	<form name="f1">
+		Enter your name :<input type="text" id='txtBox2' name="txt1" /><br><Br>
+		Enter your contact :<input type="tel" id='txtBox2' name="txt2" /><br><Br>
+		<input type="button" onclick="Empty()" value="Validate Textbox" />
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+	<script>
+		function numvalidate() {
+			var num = document.myform.num.value;
+			if (isNaN(num)) {
+				alert("Enter Numeric value only");
+
+			}
+			else {
+				alert("Number Validation: Successful.");
+			}
+
+		}
+	</script>
+</head>
+
+<body>
+	<form name="myform">
+		Number: <input type="text" name="num"><br />
+		<input type="submit" value="submit" onclick="numvalidate()">
+	</form>
+
+</body>
+
+</html>

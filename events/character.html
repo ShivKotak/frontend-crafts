@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function validation() {
+
+			var a = document.form.txt1.value;
+			if ((a.length < 5) && (a.length > 15)) {
+				alert("Your Character must be 5 to 15 Character");
+				document.form.txt1.select();
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form name="form">
+		Your Name:<input type="text" name="txt1">
+		<input type="button" value="Submit" onclick="validation()">
+	</form>
+</body>
+
+</html>

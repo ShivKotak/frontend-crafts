@@ -1,0 +1,43 @@
+ *{
+    color: brown;
+} 
+ h1{
+      color: blue;
+
+     }    
+p{
+    color: blanchedalmond;
+   
+}
+button{
+    color: brown;
+    background-color: bisque;
+}
+body{
+    background-color: rgb(45,54,100);
+}
+#headingone{
+    color: rgb(255, 0, 179);
+}
+#headingtwo{
+    color: rgb(220, 245, 242);
+}
+#headingthree{
+    color: rgb(87, 165, 42);
+}
+.myclass{
+    color: blueviolet;
+}
+p{
+    text-align: center;
+    text-decoration: brown underline;
+    font-weight:bold;
+}
+#one{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+#two{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}

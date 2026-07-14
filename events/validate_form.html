@@ -1,0 +1,127 @@
+
+<html>
+	<head>
+		<title>Form Validation</title>
+      
+		<script type="text/javascript">
+
+			// Form validation code will come here.
+			function validate()
+			{
+				if( document.myForm.username.value == "" )
+				{
+					alert( "Please provide your name!" );
+					document.myForm.username.focus() ;
+				
+				}
+				if( (document.myForm.username.value.length<5) || (document.myForm.username.value.length>15))
+				{
+					alert( "Enter string of 5 to 15 letters!" );
+					document.myForm.username.focus() ;
+					
+				}
+				if(document.myForm.zipcode.value=="" || isNaN(document.myForm.zipcode.value)  )
+				{
+					alert( "Please provide Zipcode!" );
+					document.myForm.zipcode.focus() ;
+					
+				}
+			
+				if (document.myForm.zipcode.value.length < 6)
+				{
+					 alert ( " give proper length" );
+					document.myForm.zipcode.focus() ;
+				}
+				
+				if(document.myForm.country.value=="sc")
+				{
+					alert("Please provide country");
+					document.myForm.country.focus();
+					
+				}
+				if((document.myForm.h1.checked == false) && 
+				(document.myForm.h2.checked == false)  && 
+				(document.myForm.h3.checked==false))
+				{
+					alert("Please Select any hobby");
+					document.myForm.h1.focus();
+					
+				}
+				if((document.myForm.gender[0].checked==false)&& (document.myForm.gender[1].checked==false))
+				{
+					alert("Please Select the gender");
+					document.myForm.gender[0].focus();
+					
+				}
+				
+				display();
+			}
+			function display()
+				{
+					var msg="User Name = "+document.myForm.username.value +"<br>" +
+							"Zipcode ="+document.myForm.zipcode.value + "<br>" +
+							"Country ="+document.myForm.country.value ;
+		                                    document.getElementById("demo").innerHTML = msg;
+				}
+				
+			
+		</script>
+		<body>
+			<br><br><br><br><br><br>
+		<p id = "demo"> </p>	
+	<form name="myForm">
+			<table cellspacing="2" cellpadding="2" border="1">
+			
+			<tr>
+				<td align="right">User Name</td>
+				<td><input type="text" name="username" /></td>
+			</tr>
+			<tr>
+				<td align="right">Zipcode</td>
+				<td><input type="text" name="zipcode" /></td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+					<select name="country">
+						<option value="sc" selected>[Select Country]</option>
+						<option value="india">India</option>
+						<option value="usa">USA</option>
+						<option value="uk">UK</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Select Hobbies</td>
+				<td>
+					<input type="checkbox" name="h1" >Singing<br>
+					<input type="checkbox" name="h2" >Dancing<br>
+					<input type="checkbox" name="h3" >Cooking<br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Select Gender</td>
+				<td>
+					<input type="radio" name="gender" >Male<br>
+					<input type="radio" name="gender" >Female<br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type = "button" value="Submit"  onclick = "validate() " /></td>		
+			</TABLE>
+		</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+

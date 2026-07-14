@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validate()
+        {
+           var f=document.f1.t1.value;
+           var l=document.f1.t2.value;
+           var p=/^[A-za-z]+$/;
+           //alert("your name is "+f+" "+l);
+           if(f=="")
+           {
+            alert("empty fields not allowed");
+            document.f1.t1.focus();
+           }
+           else if(l=="")
+           {
+            alert("empty fields not allowed");
+            document.f1.t2.focus();
+           }
+           else
+           {
+                if(f.match(p) && l.match(p))
+                {
+                //alert("your name is "+f+" "+l);
+                 document.getElementById('p1').innerHTML="your first name is :"+f; //document.getElementById('txt').value;
+                document.getElementById('p2').innerHTML="your lastname is :"+l;
+                //document.getElementById('txt1').value;;
+                }
+           }
+           
+        }
+    </script>
+    <form name="f1">
+        FIRST NAME : <input type="text" id="txt" name='t1'><br><br>
+        LAST NAME : <input type="text" id="txt1" name='t2'><br><br>
+        <input type="button" value="CLICK ME" onclick="validate()">
+    </form>
+    <p id="p1">
+    <p id="p2">
+        
+    </p>
+    </p>
+</body>
+</html>

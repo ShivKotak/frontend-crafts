@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate the sum using all loops</title>
+</head>
+<body>
+    <script>
+        // While loop
+        let total = 0;
+        let i = 1;
+
+        while (i <= 10) {
+            total += i;
+            i++;
+        }
+
+        let average = total / 10;
+        document.write("<br>While Loop - Total: " + total);
+        document.write("<br>While Loop - Average: " + average);
+
+        // Do-while loop
+        let total2 = 0;
+        let i2 = 1;
+
+        do {
+            total2 += i2;
+            i2++;
+        } while (i2 <= 10);
+
+        let average2 = total2 / 10;
+        document.write("<hr>Do-While Loop - Total: " + total2);
+        document.write("<br>Do-While Loop - Average: " + average2);
+
+        // For loop
+        let total3 = 0;
+
+        for (let i3 = 1; i3 <= 10; i3++) {
+            total3 += i3;
+        }
+
+        let average3 = total3 / 10;
+        document.write("<hr>For Loop - Total: " + total3);
+        document.write("<br>For Loop - Average: " + average3);
+    </script>
+</body>
+</html>

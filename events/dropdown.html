@@ -1,0 +1,52 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script>
+        function validate()
+        {
+            if(document.getElementById("sc").selected==true)
+            {
+                alert("Please select the country");
+            }
+            else if(document.getElementById("ind").selected==true)
+            {
+                document.getElementById("p1").innerHTML="You have selected : "+document.getElementById("ind").value
+            }
+            else if(document.getElementById("pak").selected==true)
+            {
+                document.getElementById("p1").innerHTML="You have selected : "+document.getElementById("pak").value
+            }
+            else if(document.getElementById("bang").selected==true)
+            {
+                document.getElementById("p1").innerHTML="You have selected : "+document.getElementById("bang").value
+            }
+            else if(document.getElementById("us").selected==true)
+            {
+                document.getElementById("p1").innerHTML="You have selected : "+document.getElementById("us").value
+            }
+            
+        }
+    
+    </script>
+    <body>
+        <form>
+            <select>
+                <option id="sc">Select country</option>
+                <option id="ind" value="india">India</option>
+                <option id="pak" value="pakistan">Pakistan</option>
+                <option id="bang" value="bangladesh"> Bangladesh</option>
+                <option id="us" value="usa">USA</option>
+            </select>
+            <input type="button" value="click me" onclick="validate()">
+        </form>
+        <p id="p1"></p>
+    </body>
+    </html>  
+</body>
+</html>

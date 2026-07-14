@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this page is about CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=html" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: palevioletred;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: brown dashed underline;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: salmon;
+            font-weight: lighter;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 20px 30px 20px;
+            font-style: oblique;
+            border: 2px solid red;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            font-family: "Playwrite DK Loopet", cursive;
+            margin-top: 2px;
+            text-decoration: underline;
+            background-color: lightblue;
+            border: 2px solid blue;
+            border-radius: 10px;
+            text-transform: capitalize;
+            line-height: 40px;
+            line-break: strict;
+        }
+
+        .first {
+            color: rgb(76, 81, 5);
+            text-align: center;
+            font-size: 30px;
+            text-decoration: underline;
+            background-color: lightgreen;
+            border-radius: 10px;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #first {
+            background-image: url(data:image/png;base64,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);
+            background-size: contain;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px; 
+            visibility: visible;
+        }
+
+        span {
+            font-size: 40px;
+            color: blue;
+            text-align: center;
+            font-family: 'Material Symbols Outlined';
+        }
+    </style>
+</head>
+
+<body>
+
+    <span style="font-size: 60px;" class="material-symbols-outlined">
+        html
+    </span>
+    <h1>this is an headig</h1>
+    <br>
+    <p style="color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sapiente cupiditate
+        tenetur a rem facilis? Quisquam quis explicabo repudiandae nulla saepe, culpa quo qui corrupti animi iusto
+        exercitationem provident totam.
+        Blanditiis minus cumque sunt corrupti doloremque, expedita laudantium aspernatur dolor ab nisi, iusto ipsa nam
+        voluptatibus officia. Fugit sequi ipsa aperiam sed ducimus nihil modi ut quam ex, ipsam necessitatibus!</p>
+    <br>
+    <p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In corporis quisquam fugit cupiditate at!
+        Porro veniam libero, ullam est aliquam dignissimos velit eveniet. Natus ut itaque quaerat obcaecati animi magni.
+    </p>
+    <br>
+    <p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus inventore fuga culpa
+        unde sunt praesentium, distinctio ipsa tempore architecto, in, dicta illum magni. Dicta esse quibusdam error
+        repellat saepe.</p>
+
+    <div id="first">first</div>
+</body>
+
+</html>
