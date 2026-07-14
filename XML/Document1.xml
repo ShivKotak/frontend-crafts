@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document [
+  <!-- Root element -->
+  <!ELEMENT document (lineBreak, notes, message)>
+
+  <!-- lineBreak: EMPTY element -->
+  <!ELEMENT lineBreak EMPTY>
+
+  <!-- notes: ANY content -->
+  <!ELEMENT notes ANY>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+
+  <!-- message: Mixed content (text + bold + italic) -->
+  <!ELEMENT message (#PCDATA | bold | italic)*>
+  <!ELEMENT bold (#PCDATA)>
+  <!ELEMENT italic (#PCDATA)>
+]>
+<document>
+  <!-- EMPTY element (no content, self-closing) -->
+  <lineBreak/>
+
+  <!-- ANY content (can contain text, elements, or both) -->
+  <notes>
+    These are meeting notes.
+    <date>18-08-2025</date>
+    <author>Shiv</author>
+  </notes>
+
+  <!-- Mixed content -->
+  <message>
+    Hello, this is <bold>important</bold> and also <italic>stylish</italic>.
+  </message>
+</document>

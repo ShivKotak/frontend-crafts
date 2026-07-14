@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Books>
+    <book title="Introduction to Programming" id="1">
+        <author>John Smith</author>
+        <year>2022</year>
+        <publisher>TechPress</publisher>
+    </book>
+    <book title="Data Structures in C++">
+        <author>Mary Johnson</author>
+        <year>2021</year>
+        <publisher>CodeWorld</publisher>
+    </book>
+    <book title="Database Systems">
+        <author>Ravi Patel</author>
+        <year>2020</year>
+        <publisher>Knowledge House</publisher>
+    </book>
+</Books>

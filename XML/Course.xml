@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Courses>
+    <Course id="C101" level="Beginner">
+        <Title>Introduction to Java</Title>
+        <Instructor experience="5 years">Mr. Verma</Instructor>
+        <Module moduleID="M1" duration="2 weeks">Basics</Module>
+        <Module moduleID="M2" duration="3 weeks">OOP Concepts</Module>
+    </Course>
+    <Course id="C102" level="Intermediate">
+        <Title>Web Development</Title>
+        <Instructor experience="7 years">Ms. Sen</Instructor>
+        <Module moduleID="M1" duration="2 weeks">HTML CSS</Module>
+        <Module moduleID="M2" duration="3 weeks">JavaScript</Module>
+    </Course>
+    <Course id="C103" level="Advanced">
+        <Title>Data Structures</Title>
+        <Instructor experience="6 years">Dr. Mukherjee</Instructor>
+        <Module moduleID="M1" duration="2 weeks">Arrays Linked Lists</Module>
+        <Module moduleID="M2" duration="3 weeks">Trees Graphs</Module>
+    </Course>
+</Courses>

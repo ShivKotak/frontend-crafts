@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Timetable [
+    <!ENTITY breakTime "Recess: 10:30 AM – 10:45 AM">
+]>
+
+<Timetable>
+    <Class classID="C101" grade="5">
+        <Subject>Mathematics</Subject>
+        <Teacher teacherID="T001">Mrs. Shah</Teacher>
+        <TimeSlot>09:00 AM - 10:30 AM</TimeSlot>
+        <Room>Room 12</Room>
+        <Break>&breakTime;</Break>
+    </Class>
+
+    <Class classID="C102" grade="6">
+        <Subject>English</Subject>
+        <Teacher teacherID="T002">Mr. Mehta</Teacher>
+        <TimeSlot>10:45 AM - 12:15 PM</TimeSlot>
+        <Room>Room 14</Room>
+        <Break>&breakTime;</Break>
+    </Class>
+
+    <Class classID="C103" grade="7">
+        <Subject>Science</Subject>
+        <Teacher teacherID="T003">Ms. Raina</Teacher>
+        <TimeSlot>01:00 PM - 02:30 PM</TimeSlot>
+        <Room>Lab 1</Room>
+        <Break>&breakTime;</Break>
+    </Class>
+</Timetable>

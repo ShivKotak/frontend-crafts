@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="car">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="company" type="xs:string"/>
+        <xs:element name="model" type="xs:string"/>
+        <xs:element name="engine" type="xs:string"/>
+        <xs:element name="mileage" type="xs:decimal"/>
+      </xs:sequence>
+      <!-- Attribute -->
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

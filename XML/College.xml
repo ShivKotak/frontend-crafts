@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE college SYSTEM "college.dtd">
+<college>
+    <department>
+        <name>Computer Science</name>
+        <hod>Dr. Sharma</hod>
+        <totalFaculty>12</totalFaculty>
+    </department>
+    <department>
+        <name>Information Technology</name>
+        <hod>Prof. Verma</hod>
+        <totalFaculty>10</totalFaculty>
+    </department>
+</college>

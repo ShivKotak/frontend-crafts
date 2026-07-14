@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE InventoryManagement [
+    <!ENTITY Currency "$">
+]>
+<InventoryManagement>
+    <Item itemCode="I001" category="Electronics">
+        <ItemName>Bluetooth Speaker</ItemName>
+        <Quantity>50</Quantity>
+        <Supplier supplierID="S1001">AudioTech Ltd.</Supplier>
+        <Price>&Currency;2500</Price>
+    </Item>
+     <Item itemCode="I002" category="Stationery">
+        <ItemName>Notebook A4</ItemName>
+        <Quantity>200</Quantity>
+        <Supplier supplierID="S1002">Classic Papers</Supplier>
+        <Price>&Currency;45</Price>
+    </Item>
+
+    <Item itemCode="I003" category="Furniture">
+        <ItemName>Office Chair</ItemName>
+        <Quantity>20</Quantity>
+        <Supplier supplierID="S1003">ErgoFurn India</Supplier>
+        <Price>&Currency;3200</Price>
+    </Item>
+
+    <Item itemCode="I004" category="Computer Accessories">
+        <ItemName>Wireless Mouse</ItemName>
+        <Quantity>75</Quantity>
+        <Supplier supplierID="S1004">TechNova Supplies</Supplier>
+        <Price>&Currency;699</Price>
+    </Item>
+</InventoryManagement>

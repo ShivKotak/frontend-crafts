@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JobApplications [
+    <!ENTITY thankyouNote "Thank you for applying. We will get back to you soon.">
+]>
+
+<JobApplications>
+    <Application applicationID="APP1001" position="Frontend Developer">
+        <Candidate candidateID="CAN001">Shiv Kotak</Candidate>
+        <Resume>shiv_resume.pdf</Resume>
+        <InterviewDate>2025-08-10</InterviewDate>
+        <HRContact empCode="HR1234">Priya Mehta</HRContact>
+        <Note>&thankyouNote;</Note>
+    </Application>
+
+    <Application applicationID="APP1002" position="Backend Engineer">
+        <Candidate candidateID="CAN002">Sarth Patel</Candidate>
+        <Resume>sarth_resume.pdf</Resume>
+        <InterviewDate>2025-08-12</InterviewDate>
+        <HRContact empCode="HR5678">Aman Shah</HRContact>
+        <Note>&thankyouNote;</Note>
+    </Application>
+
+    <Application applicationID="APP1003" position="UI/UX Designer">
+        <Candidate candidateID="CAN003">Mehul Desai</Candidate>
+        <Resume>mehul_resume.pdf</Resume>
+        <InterviewDate>2025-08-14</InterviewDate>
+        <HRContact empCode="HR9810">Nidhi Sharma</HRContact>
+        <Note>&thankyouNote;</Note>
+    </Application>
+</JobApplications>

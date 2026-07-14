@@ -1,0 +1,5 @@
+<!ELEMENT college (department+)>
+<!ELEMENT department (name, hod, totalFaculty)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT hod (#PCDATA)>
+<!ELEMENT totalFaculty (#PCDATA)>

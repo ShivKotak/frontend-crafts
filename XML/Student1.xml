@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Student>
+    <Sname>shiv</Sname>
+    <Personal_Info>
+        <Address>1,mainstreet,radhanpur</Address>
+        <Birth_date>08-06-2007</Birth_date>
+        <Gender>Male</Gender>
+        <MobileNo>9664918227</MobileNo>
+    </Personal_Info>
+    <Result>
+        <Totle>480</Totle>
+        <Percentage>96</Percentage>
+        <Grade>A+</Grade>
+    </Result>
+</Student>

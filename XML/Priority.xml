@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tasks [
+  <!-- Root element -->
+  <!ELEMENT tasks (task+)>
+
+  <!-- task element with priority attribute restricted -->
+  <!ELEMENT task (#PCDATA)>
+  <!ATTLIST task priority (low | medium | high) #REQUIRED>
+]>
+<tasks>
+  <task priority="low">Clean desk</task>
+  <task priority="medium">Prepare presentation</task>
+  <task priority="high">Submit project report</task>
+</tasks>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="Schema_Conference.xsd"
+            year="2025">
+
+  <name>International Tech Conference</name>
+
+  <session>
+    <title>Artificial Intelligence in 2025</title>
+    <speaker sid="S101">
+      <name>Shiv Kotak</name>
+      <email>shiv.kotak@example.com</email>
+    </speaker>
+    <speaker sid="S102">
+      <name>Aarav Mehta</name>
+      <email>aarav.mehta@example.com</email>
+    </speaker>
+    <duration>2 hours</duration>
+  </session>
+
+  <session>
+    <title>Blockchain and Finance</title>
+    <speaker sid="S201">
+      <name>Ananya Rao</name>
+      <email>ananya.rao@example.com</email>
+    </speaker>
+    <!-- duration is optional, so skipped here -->
+  </session>
+
+</conference>

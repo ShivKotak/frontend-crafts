@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="Book_Assign.xsd"
+      category="fiction">
+  <title>The Lost Horizon</title>
+  <author>James Hilton</author>
+  <year>2001</year>
+</book>

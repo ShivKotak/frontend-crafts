@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library [
+  <!-- Root: library contains one or more book -->
+  <!ELEMENT library (book+)>
+
+  <!-- book must contain title+, author, year?, email (in order) -->
+  <!ELEMENT book (title+, author, year?, email)>
+  <!ATTLIST book 
+    isbn CDATA #REQUIRED
+    available (yes | no) "yes"
+  >
+
+  <!-- title: plain text -->
+  <!ELEMENT title (#PCDATA)>
+
+  <!-- author with unique ID -->
+  <!ELEMENT author (#PCDATA)>
+  <!ATTLIST author aID ID #REQUIRED>
+
+  <!-- year: optional, with restricted month values -->
+  <!ELEMENT year (#PCDATA)>
+  <!ATTLIST year month (july | august | september) #IMPLIED>
+
+  <!-- email element -->
+  <!ELEMENT email (#PCDATA)>
+  <!ATTLIST email 
+    type (personal | work) #REQUIRED
+    a_ID IDREF #REQUIRED
+  >
+]>
+<library>
+  <book isbn="978-1234567890" available="yes">
+    <title>XML Basics</title>
+    <author aID="A1">John Doe</author>
+    <year month="july">2022</year>
+    <email type="work" a_ID="A1">john.doe@workmail.com</email>
+  </book>
+
+  <book isbn="978-9876543210" available="no">
+    <title>Advanced XML</title>
+    <title>XML with DTD</title>
+    <author aID="A2">Jane Smith</author>
+    <email type="personal" a_ID="A2">jane.smith@gmail.com</email>
+  </book>
+</library>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Hospital [
+<!ENTITY hospitalName "CityCare Hospital">
+<!ENTITY defaultRoom "General Ward">
+]>
+<Hospital>
+    <Patient patientID="P001" admissionDate="2025-08-01">
+        <Name>Rajesh Kumar</Name>
+        <Age>45</Age>
+        <Doctor empID="D101">Dr. Sharma</Doctor>
+        <TreatmentPlan tid="T001" duration="2 weeks">
+      Patient admitted at &hospitalName; in &defaultRoom;.
+    </TreatmentPlan>
+        <Medications>
+            <Medicine medicineID="M001" type="Tablet">
+                <Name>Paracetamol</Name>
+                <Dosage>500mg</Dosage>
+                <Frequency>Twice Daily</Frequency>
+            </Medicine>
+            <Medicine medicineID="M002" type="Injection">
+                <Name>Antibiotic</Name>
+                <Dosage>1 vial</Dosage>
+                <Frequency>Once Daily</Frequency>
+            </Medicine>
+        </Medications>
+    </Patient>
+    
+    <Patient patientID="P002" admissionDate="2025-08-10">
+        <Name>Anita Sharma</Name>
+        <Age>32</Age>
+        <Doctor empID="D105">Dr. Patel</Doctor>
+        <TreatmentPlan tid="T002" duration="1 week">
+      Patient admitted at &hospitalName; in &defaultRoom;.
+    </TreatmentPlan>
+        <Medications>
+            <Medicine medicineID="M010" type="Tablet">
+                <Name>Vitamin C</Name>
+                <Dosage>1000mg</Dosage>
+                <Frequency>Once Daily</Frequency>
+            </Medicine>
+            <Medicine medicineID="M011" type="Syrup">
+                <Name>Cough Syrup</Name>
+                <Dosage>10ml</Dosage>
+                <Frequency>Thrice Daily</Frequency>
+            </Medicine>
+        </Medications>
+    </Patient>
+</Hospital>

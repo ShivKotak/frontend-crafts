@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Schema_Order.xsd">
+
+  <item>
+    <productName>Laptop</productName>
+    <quantity>2</quantity>
+    <discountCode>NEWYEAR2025</discountCode>
+    <discountCode>STUDENT10</discountCode>
+  </item>
+
+  <item>
+    <productName>Wireless Mouse</productName>
+    <quantity>1</quantity>
+  </item>
+
+  <notes>Deliver before 25th Jan</notes>
+  <notes>Gift wrap the items</notes>
+
+</order>

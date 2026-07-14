@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employee SYSTEM "employee.dtd">
+<employee empId="E001" designation="Programmer">
+    <name>Shiv Kotak</name>
+    <salary>60000</salary>
+    <department>IT</department>
+</employee>

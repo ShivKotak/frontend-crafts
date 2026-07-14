@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MovieDatabase [
+    <!ELEMENT MovieDatabase (movie+)>
+    <!ELEMENT movie (title, director, genre, releaseDate?)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT releaseDate (#PCDATA)>
+]>
+<MovieDatabase>
+    <movie>
+        <title>Inception</title>
+        <director>Christopher Nolan</director>
+        <genre>Sci-Fi</genre>
+        <releaseDate>2010</releaseDate>
+    </movie>
+
+    <movie>
+        <title>The Godfather</title>
+        <director>Francis Ford Coppola</director>
+        <genre>Crime</genre>
+    </movie>
+</MovieDatabase>

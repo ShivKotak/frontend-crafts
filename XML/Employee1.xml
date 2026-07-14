@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee>
+        <emp_no>101</emp_no>
+        <name>Shiv Kotak</name>
+        <department>Information Technology</department>
+        <managerName>Rajesh Mehta</managerName>
+        <projectAssign>
+            <proj_1>Library Management System</proj_1>
+            <proj_2>E-Commerce Website</proj_2>
+            <proj_3>Stock Market Dashboard</proj_3>
+        </projectAssign>
+        <designation>Software Developer</designation>
+    </employee>
+    <employee>
+        <emp_no>102</emp_no>
+        <name>Riya Sharma</name>
+        <department>Finance</department>
+        <managerName>Neha Patel</managerName>
+        <projectAssign>
+            <proj_1>Payroll System</proj_1>
+            <proj_2>Budget Tracker</proj_2>
+            <proj_3>Investment Analyzer</proj_3>
+        </projectAssign>
+        <designation>Financial Analyst</designation>
+    </employee>
+</employees>

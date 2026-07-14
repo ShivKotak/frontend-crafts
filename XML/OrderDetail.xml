@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orderDetails>
+  <order>
+    <orderNumber>ORD1001</orderNumber>
+    <orderDate>2025-08-18</orderDate>
+    <orderAmount>4500</orderAmount>
+
+    <items>
+      <item>
+        <itemName>Laptop Bag</itemName>
+        <itemPrice>1500</itemPrice>
+        <quantity>2</quantity>
+      </item>
+      <item>
+        <itemName>Wireless Mouse</itemName>
+        <itemPrice>750</itemPrice>
+        <quantity>2</quantity>
+      </item>
+    </items>
+  </order>
+</orderDetails>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="book">
+    <xs:complexType>
+     <xs:sequence>
+         <xs:element name="title" type="xs:string"/>
+         <xs:choice>
+            <xs:element name="author" type="xs:string"/>
+            <xs:element name="publisher" type="xs:string"/>
+         </xs:choice>
+         <xs:element name="year">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="1995"/>
+                    <xs:maxInclusive value="2025"/>
+                </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+     </xs:sequence>
+     <xs:attribute name="category" use="required">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                  <xs:enumeration value="fiction"/>
+                  <xs:enumeration value="nonfiction"/>
+                  <xs:enumeration value="reference"/>
+            </xs:restriction>
+        </xs:simpleType>
+     </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

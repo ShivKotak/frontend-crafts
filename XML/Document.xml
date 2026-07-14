@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Document [
+  <!-- DTD: order must be title, section(s), summary (optional) -->
+  <!ELEMENT Document (title, section+, summary?)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT section (heading, paragraph*)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT paragraph (#PCDATA)>
+  <!ELEMENT summary (#PCDATA)>
+]>
+<Document>
+  <title>Occurrence Indicators Demo</title>
+
+  <section>
+    <heading>Introduction</heading>
+    <paragraph>This file shows +, *, and ? usage in an internal DTD.</paragraph>
+    <paragraph>paragraph* allows zero or more paragraphs inside a section.</paragraph>
+  </section>
+
+  <section>
+    <heading>Details</heading>
+    <!-- This section has zero paragraphs, which is allowed by paragraph* -->
+  </section>
+
+  <!-- summary is optional due to ? -->
+  <summary>title appears exactly once; section appears one or more times; summary is optional.</summary>
+</Document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Schema_Library.xsd">
+
+  <book>
+    <title>Introduction to AI</title>
+    <author aid="A101">John Smith</author>
+    <publisher>TechWorld Press</publisher>
+    <category>Technology</category>
+    <category>Artificial Intelligence</category>
+  </book>
+
+  <book>
+    <title>Finance and Blockchain</title>
+    <author aid="A102">Aarav Mehta</author>
+    <category>Finance</category>
+    <category>Blockchain</category>
+  </book>
+
+  <member>
+    <name>Shiv Kotak</name>
+    <id>M001</id>
+  </member>
+
+  <member>
+    <name>Ananya Rao</name>
+    <id>M002</id>
+  </member>
+
+</library>

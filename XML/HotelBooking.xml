@@ -1,0 +1,20 @@
+<HotelBookings>
+    <Booking id="B001" status="Confirmed">
+        <Customer id="C123">Nikhil Desai</Customer>
+        <Room roomNo="204" type="Deluxe" />
+        <CheckIn>2025-08-01</CheckIn>
+        <CheckOut>2025-08-05</CheckOut>
+    </Booking>
+    <Booking id="B002" status="Pending">
+        <Customer id="C124">Manasi Shah</Customer>
+        <Room roomNo="305" type="Suite" />
+        <CheckIn>2025-09-10</CheckIn>
+        <CheckOut>2025-09-15</CheckOut>
+    </Booking>
+    <Booking id="B003" status="Cancelled">
+        <Customer id="C125">Harshil Patel</Customer>
+        <Room roomNo="110" type="Standard" />
+        <CheckIn>2025-07-20</CheckIn>
+        <CheckOut>2025-07-23</CheckOut>
+    </Booking>
+</HotelBookings>

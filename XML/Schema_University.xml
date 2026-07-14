@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="Schema_University.xsd">
+
+  <department>
+    <deptName>Computer Science</deptName>
+    <student>
+      <name>Shiv Kotak</name>
+      <id>S001</id>
+      <course>Data Structures</course>
+      <course>Database Systems</course>
+      <course>Operating Systems</course>
+    </student>
+    <student>
+      <name>Aarav Mehta</name>
+      <id>S002</id>
+      <course>Artificial Intelligence</course>
+      <course>Machine Learning</course>
+    </student>
+  </department>
+
+  <department>
+    <deptName>Finance</deptName>
+    <student>
+      <name>Ananya Rao</name>
+      <id>S101</id>
+      <course>Blockchain in Finance</course>
+      <course>Investment Strategies</course>
+    </student>
+  </department>
+
+</university>

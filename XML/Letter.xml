@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letters>
+  <letter>
+    <contact type="Manager">
+      <name>Rajesh Mehta</name>
+      <address>12 Business Park, Near SG Highway</address>
+      <city>Ahmedabad</city>
+      <pin>380015</pin>
+      <state>Gujarat</state>
+      <flag gender="male"/>
+    </contact>
+
+    <salutation>Dear Sir,</salutation>
+
+    <paragraph>
+      I am writing to inform you about the successful completion of our project. 
+      We appreciate your guidance and support throughout the process.
+    </paragraph>
+
+    <closing>Sincerely,</closing>
+    <signature>Shiv Kotak</signature>
+  </letter>
+
+  <letter>
+    <contact type="Officer">
+      <name>Neha Sharma</name>
+      <address>45 Residency Road</address>
+      <city>Mumbai</city>
+      <pin>400001</pin>
+      <state>Maharashtra</state>
+      <flag gender="female"/>
+    </contact>
+
+    <salutation>Respected Madam,</salutation>
+
+    <paragraph>
+      This is to notify you about the upcoming training session scheduled next week. 
+      Your presence is highly requested.
+    </paragraph>
+
+    <closing>Regards,</closing>
+    <signature>Amit Patel</signature>
+  </letter>
+</letters>

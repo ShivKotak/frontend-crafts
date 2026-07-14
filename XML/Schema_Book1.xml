@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:noNamespaceSchemaLocation="Schema_Book1.xsd" isbn="9" edition="1st">
+    <title>Psycology of Money</title>
+    <author>Peter.k</author>
+    <price>300.00</price>
+
+    <publisher>
+        <name>RJ publisher</name>
+        <city>Ahemdabad</city>
+    </publisher>
+</book>

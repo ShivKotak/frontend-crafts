@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="marksheet.xsl" type="text/xsl"?>
+<marksheet>
+    <student>
+        <name>Amit</name>
+        <marks>75</marks>
+    </student>
+    <student>
+        <name>Riya</name>
+        <marks>38</marks>
+    </student>
+    <student>
+        <name>Karan</name>
+        <marks>55</marks>
+    </student>
+    <student>
+        <name>Meera</name>
+        <marks>25</marks>
+    </student>
+</marksheet>

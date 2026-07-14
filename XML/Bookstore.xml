@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Bookstore [
+    <!ELEMENT Bookstore (Book+)>
+    <!ELEMENT Book (Title, Author, Price)>
+    <!ATTLIST Book 
+        ISBN CDATA #REQUIRED
+        Year CDATA #REQUIRED
+    >
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT Author (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+]>
+<Bookstore>
+    <Book ISBN="1" Year="2018">
+        <Title>Book1</Title>
+        <Author>Author1</Author>
+        <Price>200</Price>
+    </Book>
+    <Book ISBN="2" Year="2019">
+        <Title>Book2</Title>
+        <Author>Author2</Author>
+        <Price>300</Price>
+    </Book>
+</Bookstore>

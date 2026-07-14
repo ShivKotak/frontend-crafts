@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Root element -->
+  <xs:element name="university">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Department: 1 to 10 -->
+        <xs:element name="department" minOccurs="1" maxOccurs="10">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Department name required -->
+              <xs:element name="deptName" type="xs:string"/>
+
+              <!-- Student: 0 or more -->
+              <xs:element name="student" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="id" type="xs:string"/>
+                    <!-- Course: 1 to 8 -->
+                    <xs:element name="course" type="xs:string" minOccurs="1" maxOccurs="8"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

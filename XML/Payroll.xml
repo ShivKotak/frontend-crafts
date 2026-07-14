@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Payroll [
+    <!ENTITY currency "₹">
+    <!ENTITY salaryNote "Salary is credited monthly.">
+]>
+
+<Payroll>
+    <Employee empID="E001" designation="Software Engineer">
+        <Name>Shiv Kotak</Name>
+        <Salary>&currency;75000</Salary>
+        <BankAccount bankCode="HDFC0012345">HDFC Bank</BankAccount>
+        <TaxInfo>Tax Deducted at Source: 10%</TaxInfo>
+        <Note>&salaryNote;</Note>
+    </Employee>
+
+    <Employee empID="E002" designation="UI/UX Designer">
+        <Name>Mehul Desai</Name>
+        <Salary>&currency;65000</Salary>
+        <BankAccount bankCode="ICICI0049876">ICICI Bank</BankAccount>
+        <TaxInfo>Tax Deducted at Source: 8%</TaxInfo>
+        <Note>&salaryNote;</Note>
+    </Employee>
+
+    <Employee empID="E003" designation="System Analyst">
+        <Name>Sarth Patel</Name>
+        <Salary>&currency;82000</Salary>
+        <BankAccount bankCode="SBI0090012">SBI</BankAccount>
+        <TaxInfo>Tax Deducted at Source: 12%</TaxInfo>
+        <Note>&salaryNote;</Note>
+    </Employee>
+</Payroll>

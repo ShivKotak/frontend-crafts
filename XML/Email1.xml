@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Email>
+    <from>alice@example.com</from>
+    <to>bob@example.com</to>
+    <content>
+        <person>
+            <name>John Doe</name>
+            <role>Student</role>
+        </person>
+        <exercises>
+            <exercise>
+                <topic>XML Basics</topic>
+                <description>Create a simple XML document with nested elements.</description>
+            </exercise>
+            <exercise>
+                <topic>XSD Validation</topic>
+                <description>Validate the XML against a schema and fix any issues.</description>
+            </exercise>
+        </exercises>
+        <course>
+            <title>Introduction to XML</title>
+            <code>CS-XML-101</code>
+        </course>
+    </content>
+</Email>

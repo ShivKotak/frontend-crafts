@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Deliveries [
+<!ENTITY supportContact "For assistance, call 1800-DELIVERY or email support@fasttrack.com">
+]>
+<Deliveries>
+    <Delivery trackingID="FTX1001" status="In Transit">
+        <Sender customerID="C001">Shiv Kotak</Sender>
+        <Receiver customerID="C010">Soumy Sharma</Receiver>
+        <Package weight="2.5kg">Electronics - Power Bank</Package>
+        <ExpectedDate>2025-08-05</ExpectedDate>
+        <Contact>&supportContact;</Contact>
+    </Delivery>
+    <Delivery trackingID="FTX1002" status="Delivered">
+        <Sender customerID="C002">Mehul Desai</Sender>
+        <Receiver customerID="C011">Sarth Patel</Receiver>
+        <Package weight="1.2kg">Books - Programming Guide</Package>
+        <ExpectedDate>2025-07-21</ExpectedDate>
+        <Contact>&supportContact;</Contact>
+    </Delivery>
+    <Delivery trackingID="FTX1003" status="Pending Pickup">
+        <Sender customerID="C003">Sujal Vyas</Sender>
+        <Receiver customerID="C012">Riya Thakkar</Receiver>
+        <Package weight="3kg">Clothing - Order #2049</Package>
+        <ExpectedDate>2025-08-07</ExpectedDate>
+        <Contact>&supportContact;</Contact>
+    </Delivery>
+</Deliveries>

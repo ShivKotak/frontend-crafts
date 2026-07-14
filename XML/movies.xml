@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="movies.xsl" type="text/xsl"?>
+<movies>
+    <movie>
+        <title>Inception</title>
+        <genre>Sci-Fi</genre>
+        <rating>8.8</rating>
+    </movie>
+    <movie>
+        <title>Avengers</title>
+        <genre>Action</genre>
+        <rating>7.9</rating>
+    </movie>
+    <movie>
+        <title>The Dark Knight</title>
+        <genre>Action</genre>
+        <rating>9.0</rating>
+    </movie>
+    <movie>
+        <title>Interstellar</title>
+        <genre>Sci-Fi</genre>
+        <rating>8.6</rating>
+    </movie>
+</movies>

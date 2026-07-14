@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE University [
+<!ENTITY dept "Computer Science">
+]>
+<University>
+    <Course courseCode="CS101" semester="1">
+        <Title>Introduction to Programming</Title>
+        <Credits>4</Credits>
+        <Faculty empID="F101">Dr. Mehta</Faculty>
+        <Syllabus>
+            <Module>Basics of C Programming</Module>
+            <Module>Control Structures and Functions</Module>
+        </Syllabus>
+        <Students rollNo="S001" department="&dept;">
+            <Name>Shiv Kotak</Name>
+            <Year>1</Year>
+            <Email>shiv@university.com</Email>
+        </Students>
+        <Students rollNo="S002" department="&dept;">
+            <Name>Riya Sharma</Name>
+            <Year>1</Year>
+            <Email>riya@university.com</Email>
+        </Students>
+    </Course>
+    
+    <Course courseCode="CS202" semester="3">
+        <Title>Database Systems</Title>
+        <Credits>3</Credits>
+        <Faculty empID="F202">Prof. Patel</Faculty>
+        <Syllabus>
+            <Module>Relational Model</Module>
+            <Module>SQL and Queries</Module>
+        </Syllabus>
+        <Students rollNo="S010" department="&dept;">
+            <Name>Amit Patel</Name>
+            <Year>2</Year>
+            <Email>amit@university.com</Email>
+        </Students>
+        <Students rollNo="S011" department="&dept;">
+            <Name>Neha Joshi</Name>
+            <Year>2</Year>
+            <Email>neha@university.com</Email>
+        </Students>
+    </Course>
+</University>

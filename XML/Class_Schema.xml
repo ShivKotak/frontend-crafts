@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:noNamespaceSchemaLocation="Schema_Class.xsd">
+    <Student>
+        <FirstName>John</FirstName>
+        <LastName>Doe</LastName>
+        <Age>20</Age>
+    </Student>
+</Class>

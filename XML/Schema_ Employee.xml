@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="Schema_ Employee.xsd"
+          id="E101" department="IT">
+
+  <name>Shiv Kotak</name>
+  <designation>Software Engineer</designation>
+  <salary>55000.00</salary>
+
+  <contact>
+    <email>shiv.kotak@example.com</email>
+    <phone>9876543210</phone>
+  </contact>
+
+</employee>

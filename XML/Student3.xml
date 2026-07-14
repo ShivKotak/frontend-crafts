@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+    <Student>
+        <Name>
+            <Fname>shiv</Fname>
+            <Lname>Kotak</Lname>
+        </Name>
+        <Id>1</Id>
+        <Plan>
+            <Courses year="2025">
+                <Course>
+                    <name>Database System</name>
+                    <shortName>DBMS</shortName>
+                    <Record>
+                        <Grade>A</Grade>
+                        <date>2025-06-08</date>
+                    </Record>
+                </Course>
+            </Courses>
+
+            <Courses>
+            <course>
+                <name>Object Oriented Programming</name>
+                <shortName>OOP</shortName>
+                <record>
+                    <grade>A</grade>
+                    <date>2025-05-15</date>
+                </record>
+            </course>
+        </Courses>
+
+        <courses year="2024">
+            <course>
+                <name>Web Technologies</name>
+                <shortName>WT</shortName>
+                <record>
+                    <grade>B+</grade>
+                    <date>2024-12-20</date>
+                </record>
+            </course>
+        </courses>
+        
+    </Plan>
+</Student>
+</Students>

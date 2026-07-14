@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<car xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:noNamespaceSchemaLocation="Schema_Car.xsd" id="1">
+    <company>Toyota</company>
+    <model>corolla</model>
+    <engine>Petrol</engine>
+    <mileage>18.9</mileage>
+</car>

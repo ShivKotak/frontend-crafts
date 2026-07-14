@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="Schema_Student.xsd">
+    <name>shiv</name>
+    <age>17</age>
+    <course>Bscit</course>
+</Student>

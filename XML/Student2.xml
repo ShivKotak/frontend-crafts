@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <rollNo>101</rollNo>
+    <name>Shiv Kotak</name>
+    <address>
+      <line1>12 Vrundavan Society</line1>
+      <city>Ahmedabad</city>
+      <state>Gujarat</state>
+      <postalCode>380015</postalCode>
+    </address>
+    <mobile>+91-9876543210</mobile>
+    <dob>2006-04-15</dob>
+    <age>19</age>
+    <qualification>BSc (IT)</qualification>
+  </student>
+</students>

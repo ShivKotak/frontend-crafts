@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LibraryCatalog [
+    <!ENTITY authorNote "All authors featured in this catalog are renowned in their fields.">
+]>
+
+<LibraryCatalog>
+    <Book ISBN="978-0140449136" language="English">
+        <Title>The Odyssey</Title>
+        <Author>Homer</Author>
+        <Publisher pubID="PUB101">Penguin Classics</Publisher>
+        <Availability>Available</Availability>
+        <AuthorNote>&authorNote;</AuthorNote>
+    </Book>
+
+    <Book ISBN="978-8175257665" language="Hindi">
+        <Title>Godaan</Title>
+        <Author>Munshi Premchand</Author>
+        <Publisher pubID="PUB102">Lokbharti Prakashan</Publisher>
+        <Availability>Checked Out</Availability>
+        <AuthorNote>&authorNote;</AuthorNote>
+    </Book>
+
+    <Book ISBN="978-0261103573" language="English">
+        <Title>The Lord of the Rings</Title>
+        <Author>J.R.R. Tolkien</Author>
+        <Publisher pubID="PUB103">HarperCollins</Publisher>
+        <Availability>Available</Availability>
+        <AuthorNote>&authorNote;</AuthorNote>
+    </Book>
+</LibraryCatalog>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital>
+    <Patient Pid="P101" Gender="Male">
+        <Name>Mohit shah</Name>
+        <Age>54</Age>
+        <Diagnosis>Diabetes</Diagnosis>
+        <DoctorAssigned Specialization="Endocrinologist">KS Bharat</DoctorAssigned>
+    </Patient>
+     <Patient patientID="P102" gender="Female">
+        <Name>Sneha Desai</Name>
+        <Age>28</Age>
+        <Diagnosis>Thyroid</Diagnosis>
+        <DoctorAssigned specialization="General Physician">Dr. Iyer</DoctorAssigned>
+    </Patient>
+    <Patient patientID="P103" gender="Male">
+        <Name>Arjun Patel</Name>
+        <Age>42</Age>
+        <Diagnosis>Back Pain</Diagnosis>
+        <DoctorAssigned specialization="Orthopedic">Dr. Trivedi</DoctorAssigned>
+    </Patient>
+</Hospital>

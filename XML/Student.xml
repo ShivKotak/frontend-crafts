@@ -1,0 +1,20 @@
+<Enrollment>
+    <Student rollNo="S2023" department="IT">
+        <Name>Aarti Patel</Name>
+        <DOB>2004-08-15</DOB>
+        <Year>2</Year>
+        <Advisor empID="EMP456">Prof. Shah</Advisor>
+    </Student>
+    <Student rollNo="S2024" department="CS">
+        <Name>Ronak Mehta</Name>
+        <DOB>2003-12-01</DOB>
+        <Year>3</Year>
+        <Advisor empID="EMP478">Prof. Kaur</Advisor>
+    </Student>
+    <Student rollNo="S2025" department="IT">
+        <Name>Divya Joshi</Name>
+        <DOB>2005-02-22</DOB>
+        <Year>1</Year>
+        <Advisor empID="EMP490">Prof. Desai</Advisor>
+    </Student>
+</Enrollment>

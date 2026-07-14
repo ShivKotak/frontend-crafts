@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="order">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Items: 1 to 20 -->
+        <xs:element name="item" minOccurs="1" maxOccurs="20">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Required productName -->
+              <xs:element name="productName" type="xs:string"/>
+              <!-- Required quantity -->
+              <xs:element name="quantity" type="xs:integer"/>
+              <!-- 0 or more discountCodes -->
+              <xs:element name="discountCode" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Notes: optional, at most 2 -->
+        <xs:element name="notes" type="xs:string" minOccurs="0" maxOccurs="2"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

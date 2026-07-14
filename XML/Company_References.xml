@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company [
+  <!-- Root element -->
+  <!ELEMENT company (employee+, manager+)>
+
+  <!-- employee element -->
+  <!ELEMENT employee (name, department)>
+  <!ATTLIST employee empId ID #REQUIRED>
+
+  <!-- sub-elements of employee -->
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT department (#PCDATA)>
+
+  <!-- manager element -->
+  <!ELEMENT manager (#PCDATA)>
+  <!ATTLIST manager manages IDREF #REQUIRED>
+]>
+<company>
+  <!-- employees -->
+  <employee empId="E101">
+    <name>John Doe</name>
+    <department>IT</department>
+  </employee>
+
+  <employee empId="E102">
+    <name>Jane Smith</name>
+    <department>HR</department>
+  </employee>
+
+  <!-- manager references employee by ID -->
+  <manager manages="E101">Michael Scott</manager>
+  <manager manages="E102">Dwight Schrute</manager>
+</company>

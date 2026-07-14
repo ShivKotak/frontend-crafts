@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Temp.xsl" type="text/xsl"?>
+<order>
+    <product>
+        <pname>Keyboard</pname>
+        <quantity>2</quantity>
+        <price>500</price>
+    </product>
+    <product>
+        <pname>Mouse</pname>
+        <quantity>3</quantity>
+        <price>250</price>
+    </product>
+    <product>
+        <pname>Monitor</pname>
+        <quantity>1</quantity>
+        <price>7000</price>
+    </product>
+</order>

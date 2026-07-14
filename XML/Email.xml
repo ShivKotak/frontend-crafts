@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails>
+  <email from="shiv@example.com" to="friend@example.com" subject="Exam Preparation">
+    <message>Hey, dont forget to revise Unit 2 before tomorrows test. All the best!</message>
+  </email>
+
+  <email from="teacher@example.com" to="shiv@example.com" subject="Assignment Reminder">
+    <message>Please submit your database assignment by Friday.</message>
+  </email>
+</emails>

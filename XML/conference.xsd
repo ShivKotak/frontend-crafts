@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="conference">
+       <xs:complexType>
+          <xs:sequence>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="session" maxOccurs="unbounded" minOccurs="1">
+                  <xs:complexType>
+                     <xs:sequence>
+                          <xs:element name="title" type="xs:string"/>
+                          <xs:element name="speaker" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="sid" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                          </xs:element>
+                          <xs:element name="duration" type="xs:string" minOccurs="0"/>
+                     </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+          </xs:sequence>
+       </xs:complexType>
+  </xs:element>
+</xs:schema>

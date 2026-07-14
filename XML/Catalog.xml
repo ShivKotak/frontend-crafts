@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog [
+  <!-- Content model: exactly one category, one or more item, optional discount -->
+  <!ELEMENT catalog (category, item+, discount?)>
+
+  <!ELEMENT category (#PCDATA)>
+
+  <!ELEMENT item (name, price)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+
+  <!ELEMENT discount (#PCDATA)>
+]>
+<catalog>
+  <category>Electronics</category>
+
+  <item>
+    <name>Wireless Mouse</name>
+    <price>599</price>
+  </item>
+
+  <item>
+    <name>USB-C Charger</name>
+    <price>1299</price>
+  </item>
+
+  <!-- discount is optional due to '?' -->
+  <discount>10% off on accessories</discount>
+</catalog>

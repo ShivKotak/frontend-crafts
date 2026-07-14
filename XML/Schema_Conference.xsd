@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="conference">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- One name element required -->
+        <xs:element name="name" type="xs:string"/>
+
+        <!-- One or more session elements -->
+        <xs:element name="session" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Required title -->
+              <xs:element name="title" type="xs:string"/>
+
+              <!-- One or more speakers -->
+              <xs:element name="speaker" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="sid" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+
+              <!-- Optional duration -->
+              <xs:element name="duration" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+
+      <!-- Attribute year required -->
+      <xs:attribute name="year" type="xs:gYear" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

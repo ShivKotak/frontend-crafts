@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payment [
+  <!-- payment must contain either creditCard OR debitCard -->
+  <!ELEMENT payment (creditCard | debitCard)>
+
+  <!ELEMENT creditCard (number, holder)>
+  <!ELEMENT debitCard (number, holder)>
+
+  <!ELEMENT number (#PCDATA)>
+  <!ELEMENT holder (#PCDATA)>
+]>
+<payment>
+  <creditCard>
+    <number>1234-5678-9876-5432</number>
+    <holder>John Doe</holder>
+  </creditCard>
+</payment>

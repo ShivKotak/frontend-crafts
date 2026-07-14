@@ -1,0 +1,22 @@
+<Events>
+    <Event eventID="E101" type="Conference">
+        <Title>Tech Future 2025</Title>
+        <Date>2025-09-10</Date>
+        <Venue capacity="300">GLS Auditorium</Venue>
+        <Organizer role="Lead" orgID="ORG001">Kavya Shah</Organizer>
+        <Organizer role="Support" orgID="ORG002">Jay Soni</Organizer>
+    </Event>
+    <Event eventID="E102" type="Workshop">
+        <Title>Python for Data Science</Title>
+        <Date>2025-10-05</Date>
+        <Venue capacity="150">Lab Hall 2</Venue>
+        <Organizer role="Lead" orgID="ORG003">Aman Joshi</Organizer>
+    </Event>
+    <Event eventID="E103" type="Seminar">
+        <Title>AI Future</Title>
+        <Date>2025-11-12</Date>
+        <Venue capacity="500">Convention Center</Venue>
+        <Organizer role="Lead" orgID="ORG004">Dr. Raina</Organizer>
+        <Organizer role="Panelist" orgID="ORG005">Prof. Mahesh</Organizer>
+    </Event>
+</Events>

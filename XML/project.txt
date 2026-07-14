@@ -1,0 +1,41 @@
+Real time code Editor and Collaborative platform
+
+Ai Task analyzer and Management system
+
+Video Annotation Platform 
+
+AI medical assistant for animales 
+
+Organ shring -Donator finder and blood bank Avalability finder between Donator and Acceptors system
+
+Personalized Nutrition and itness management system and Diet tracker
+
+Applying Machine Learning for the Development of Physical Sensor Models in Game Engine Environment
+
+AI plant(disease) or Gardening assistant
+
+All Platform Text messages/Emails at one place
+
+Women Legal Assistance Advocate Finder App
+
+Blood group Detaection using Fingerprint
+
+AI Fruad detection system (in Upi, Bank, Blockchain) and Invoice generator
+
+E-Loan application and Verification system
+
+Smart Expense & Budget Management System
+
+Virtual Reality campus or area tour and Tourist Guide for any Destination and travel buddy finder system
+
+AI Powerd Resume Analyser and Job Recommendation System
+
+Startup Co-Founder Matchmaking Platform and AI Hackathon Teammate Finder
+
+AI course builder system 
+
+AI Cyberscurity or Ai related quiz game system 
+
+
+
+
