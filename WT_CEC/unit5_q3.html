@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Hover Effect</title>
+    <style>
+        img {
+            transition: width 0.3s, height 0.3s; 
+        }
+    </style>
+</head>
+<body>
+
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://thumbs.dreamstime.com/b/big-smile-emoticon-26256350.jpg" alt="Smiley" width="64" height="64">
+
+    <script>
+        function bigImg(x) {
+            x.style.height = "150px"; 
+            x.style.width = "150px"; 
+        }
+
+        function normalImg(x) {
+            x.style.height = "64px"; 
+            x.style.width = "64px";  
+        }
+    </script>
+
+</body>
+</html>

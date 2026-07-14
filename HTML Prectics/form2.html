@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Marketing Client Intake Form</title>
+    <style>
+        body {
+            background-color: rgb(255, 226, 192); /* Fixed */
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(247, 244, 244);
+            border-radius: 8px;
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body onload="showWelcomeMessage()">
+    <form action="action.html" onsubmit="return validateForm()">
+        <h2>Social Media Marketing Client Intake Form</h2>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="fName" name="firstName" placeholder="Name" required onfocus="clearErrorMessages()">
+
+        <div class="form-row">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last name" required onfocus="clearErrorMessages()">
+
+            <label for="email">Personal Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" onchange="validateEmail()" onfocus="clearErrorMessages()">
+            <span id="error" class="error-message">Invalid email format.</span>
+        </div>
+
+        <label for="business-name">Business Name:</label>
+        <input type="text" id="b-name" name="b-name" placeholder="Business Name" required onfocus="clearErrorMessages()">
+
+        <label for="business-email">Business Email:</label>
+        <input type="email" id="b-email" name="b-email" placeholder="Business Email" required onfocus="clearErrorMessages()">
+
+        <label for="business-address">Business Address:</label>
+        <input type="text" id="b-address" name="b-address" placeholder="Street Address" required onfocus="clearErrorMessages()">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="State" required onfocus="clearErrorMessages()">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required onfocus="clearErrorMessages()">
+
+        <fieldset>
+            <legend>Gender:</legend>
+             <label for="male">
+                <input type="radio" value="male" name="gender" id="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" value="female" name="gender" id="female" required> Female
+            </label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Hobby:</legend>
+            <label for="reading">
+                <input type="checkbox" value="reading" name="hobby" id="reading"> Reading
+            </label>
+            <label for="swimming">
+                <input type="checkbox" value="swimming" name="hobby" id="swimming"> Swimming
+            </label>
+            <label for="painting">
+                <input type="checkbox" value="painting" name="hobby" id="painting"> Painting
+            </label>
+            <label for="writing">
+                <input type="checkbox" value="writing" name="hobby" id="writing"> Writing
+            </label>
+        </fieldset>
+        <br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="4" placeholder="Enter Address" required onfocus="clearErrorMessages()"></textarea>
+
+        <label for="city">City:</label>
+        <select name="city" id="city" onfocus="clearErrorMessages()">
+            <option value="Ahmedabad" selected>Ahmedabad</option>
+            <option value="Baroda">Baroda</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Surat">Surat</option>
+            <option value="Patan">Patan</option>
+            <option value="Jamnagar">Jamnagar</option>
+            <option value="Porbandar">Porbandar</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+        </select>
+
+        <div class="buttons">
+            <a href="action.html">
+            <input type="submit" value="Submit" onclick="validateForm()"></a>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <script>
+        function showWelcomeMessage() {
+            alert("Welcome to the Social Media Marketing Client Intake Form!");
+        }
+
+        function validateEmail() {
+            const email = document.getElementById("email").value;
+            const error = document.getElementById("error");
+
+            if (email.includes("@") && email.includes(".")) {
+                error.style.display = "none";
+            } else {
+                error.style.display = "inline";
+            }
+        }
+
+        function clearErrorMessages() {
+            const error = document.getElementById("error");
+            error.style.display = "none"; 
+        }
+
+        function validateForm() {
+            const firstName = document.getElementById("fName").value;
+            const lastName = document.getElementById("lname").value;
+            let isValid = true;
+
+            if (firstName.trim() === "") {
+                alert("First name is required.");
+                isValid = false;
+            }
+
+            if (lastName.trim() === "") {
+                alert("Last name is required.");
+                isValid = false;
+            }
+
+            return isValid; 
+        }
+    </script>
+
+</body>
+
+</html>

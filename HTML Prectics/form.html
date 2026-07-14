@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Social Media Marketing Client Intake Form </title>
+    <style>
+        body {
+            background-color: rgb(255, 226, 192);
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(247, 244, 244);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form -->
+    <form action="/action.html" method="get">
+        <!-- First name -->
+         <h2>Social Media Marketing Client Intake Form</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Name" required>
+
+        <div class="form-row">
+            <!-- Last name -->
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" onchange="validateEmail()">
+            <span id="error" class="error-message">Invalid email format.</span>
+        </div>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="male">
+                <input type="radio" value="male" name="gender" id="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" value="female" name="gender" id="female" required> Female
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Check box -->
+        <fieldset>
+            <legend>Hobby:</legend>
+            <label for="reading">
+                <input type="checkbox" value="reading" name="hobby" id="reading"> Reading
+            </label>
+            <label for="swimming">
+                <input type="checkbox" value="swimming" name="hobby" id="swimming"> Swimming
+            </label>
+            <label for="painting">
+                <input type="checkbox" value="painting" name="hobby" id="painting"> Painting
+            </label>
+            <label for="writing">
+                <input type="checkbox" value="writing" name="hobby" id="writing"> Writing
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Textarea -->
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="4" placeholder="Enter Address" required></textarea>
+
+        <!-- Option and select -->
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="Ahmedabad" selected>Ahmedabad</option>
+            <option value="Baroda">Baroda</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Surat">Surat</option>
+            <option value="Patan">Patan</option>
+            <option value="Jamnagar">Jamnagar</option>
+            <option value="Porbandar">Porbandar</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+        </select>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <script>
+        function validateEmail() {
+            const email = document.getElementById("email").value;
+            const error = document.getElementById("error");
+
+            // Basic email validation
+            if (email.includes("@") && email.includes(".")) {
+                error.style.display = "none"; 
+            } else {
+                error.style.display = "inline"; 
+            }
+        }
+    </script>
+
+</body>
+
+</html>

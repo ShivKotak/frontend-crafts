@@ -1,0 +1,23 @@
+
+<html>
+<body>
+<script type='text/javascript'>
+function allnumbers()
+      { 
+      var num = /^[0-9]+$/;
+      var str=document.getElementById("name").value;
+     
+      if(!str.match(num))
+      {
+          alert('Please input numbers only');
+      }
+      }
+
+
+</script>
+<form name="myform">
+Please Numbers Only: <input type='text' name="txt1"  id="name"/>
+<input type='button' onclick="allnumbers()" value='Validate Letter' />
+</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validate()
+    {
+        if(document.getElementById("phone").value.length !=10)
+        {
+            alert("The contact number should be 10 characters long only ");
+        }
+        else if(isNaN(document.getElementById("phone").value))
+        {
+            alert("the contact number should be in a digit");
+        }
+        else{
+            document.getElementById("p1").innerHTML=document.getElementById("phone").value;
+        }
+    }
+</script>
+<body>
+    <form>
+       Contact number : <input type="text" id="phone"><br>
+        <input type="button" value="click me" onclick="validate()">
+    </form>
+    <p id="p1"></p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Validation</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        function checkField(fieldId) {
+            const field = document.getElementById();
+            const error = document.getElementById(fieldId + 'Error');
+            if (field.value.trim() === "") {
+                error.textContent = " required";
+            } else {
+                error.textContent = "";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>User Form</h2>
+    
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" onblur="checkField('firstName')">
+        <span id="firstNameError" class="error"></span><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" onblur="checkField('lastName')">
+        <span id="lastNameError" class="error"></span><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

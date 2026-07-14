@@ -1,0 +1,20 @@
+<html>
+<body>
+	<script type='text/javascript'>
+		function onlyalphabate() {
+			if (isNaN(document.myform.txt1.value)) {
+				alert("Letter Validation: Successful.");
+			}
+			else {
+				alert('Please Enter letters only.');
+				document.myform.txt1.focus();
+			}
+		}
+	</script>
+	<form name="myform">
+		Please Letters Only: <input type='text' name="txt1" />
+		<input type='button' onclick="onlyalphabate()" value='Validate Letter' />
+	</form>
+</body>
+
+</html>

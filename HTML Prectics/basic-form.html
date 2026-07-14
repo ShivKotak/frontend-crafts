@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="202401619010350/action.html" method="post">
+
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address :</label>
+        <textarea name="address" id="address" cols="20" rows="5" required>Please Enter Address</textarea><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="password">password :</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <label for="date">Date :</label>
+        <input type="date" name="date" id="date"><br><br>
+
+        <label for="file">File :</label>
+        <input type="file" name="file" id="file"><br><br>
+
+        <label for="color">Color :</label>
+        <input type="color" name="color" id="color"><br><br>
+
+        <label for="pricerange">price Range</label>
+        <input type="range" name="pricerange" id="pricerange" min="0" max="100"><br><br>
+
+        <fieldset>
+            <legend>gender</legend>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"><br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="othper"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobby</legend>
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="hobby" id="cricket" value="cricket"><br>
+            <label for="football">Football</label>
+            <input type="checkbox" name="hobby" id="football" value="football"><br>
+            <label for="hockey">Hockey</label>
+            <input type="checkbox" name="hobby" id="hockey" value="hockey"><br>
+            <label for="other">Other</label>
+            <input type="checkbox" name="hobby" id="other" value="other">
+        </fieldset>
+        <br><br>
+        <label for="city">Select City :</label>
+        <select name="city" id="city">
+            <option value="mumbai">Mumbai</option>
+            <option value="pune"/>Pune</option>
+            <option value="delhi">Delhi</option>
+            <option value="banglore">Banglore</option>
+            <option value="kolkata">Kolkata</option>
+        </select>
+        <br><br>
+        <input type="button" value="click me">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

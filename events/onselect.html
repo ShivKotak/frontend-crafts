@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Selection Example</title>
+</head>
+<body>
+
+<p>Select some of the text:</p>
+<textarea id="textArea" rows="4" cols="50">Hello world!</textarea>
+<br>
+<button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+    // Get the textarea element
+    const textArea = document.getElementById('textArea');
+    // Get the selected text
+    const selectedText = textArea.value.substring(textArea.selectionStart, textArea.selectionEnd);
+    
+    if (selectedText) {
+        alert("You selected: " + selectedText);
+    } else {
+        alert("No text selected.");
+    }
+}
+</script>
+
+</body>
+</html>
